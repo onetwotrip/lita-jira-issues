@@ -19,7 +19,7 @@ FORMATTER
       config :format, default: FORMAT.chomp, type: String
       
 
-      route /[a-zA-Z]+-\d+/, :jira_message, help: {
+      route /[a-zA-Z0-9]+-\d+/, :jira_message, help: {
         "KEY-123" => "Replies with information about the given JIRA key"
       }
 
